@@ -108,7 +108,7 @@ docker run -d \
     --name flaskapp \
     --network=twotier \
     -e MYSQL_HOST=mysql \
-    -e MYSQL_USER=root \
+    -e MYSQL_USER=root  \
     -e MYSQL_PASSWORD=admin \
     -e MYSQL_DB=mydb \
     -p 5000:5000 \
