@@ -33,3 +33,23 @@
     __> now refrash page your applicatio is successfully deployed ..type data and verify it will save data in database
     > select * from messages;
     here you will see that input data
+
+#--->what is docker compose?
+you created flaskapp container then you create mysql container and create network to connect both means you have to create one by one so docker 
+compose help you create container multiple container at a time
+
+--> your flaskapp and mysql image is proper so push it to docker hub
+instace connect# docker login
+# docker tag flaskapp:latest tarunp2912/flaskapp (give tag to image)
+# docker images (here you see that tagged app)
+# docker push tarunp2912/flaskapp ( pushig image)
+
+
+--. if you want to run two container simultaniously - can be done thorugh docker compose
+  # sudo install docker-compose
+  go to docker-compoes file and check it created
+  remove the old container and run compose
+  # docker-compoes up -d
+  # docker-compoes down
+
+  # verify the app is runnig or not?
