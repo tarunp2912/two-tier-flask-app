@@ -1,6 +1,8 @@
 # first run simple docker file then create container of that image --> run website give no database error
 # manually create containter from mysql image add environment --> so create database
-    # docker run -dit --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD="admin" mysql:5.7
+    # docker run -dit --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD="admin" mysql:5.7    
+
+    --> if you cant see docker runnig then # docker logs flask solve error
 
 # again run website now give error of cant connect --> cant connect to local server
 
