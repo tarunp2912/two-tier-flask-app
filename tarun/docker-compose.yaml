@@ -11,6 +11,8 @@ services:
       MYSQL_DB: myDb
     depends_on:
       - mysql
+    networks:
+      - twotier
   mysql:
     image: 'mysql:5.7'
     environment:
@@ -20,8 +22,12 @@ services:
       MYSQL_PASSWORD: admin
     ports:
       - '3306:3306'
+    networks:
+      - twotier
     volumes:
       - './message.sql:/docker-entrypoint-initdb.d/message.sql'
       - './mysql-data:/var/lib/mysql'
 volumes:
   mysql-data: 
+networks:
+  twotier:
