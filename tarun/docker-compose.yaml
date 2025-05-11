@@ -1,7 +1,7 @@
 version: '3'
 services:
   backend:
-    image: 'tarunp2912/flaskapp:latest'
+    image: 'tarunp2912/flask-app:latest'
     ports:
       - '5000:5000'
     environment:
